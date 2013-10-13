@@ -1,0 +1,31 @@
+/* Brandon Ruger
+ * Project 2
+ * MiU 1310 */
+
+
+a:hover{color: white; outline: groove;}
+
+#Ryder {
+    max-width: 95%;
+    max-height: 33%;    
+}
+
+#cat {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+#dog {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+#bird {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+#horse {
+    max-width: 80%;
+    max-height: 80%;
+}

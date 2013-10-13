@@ -1,0 +1,468 @@
+<!doctype html>
+    
+<!--Brandon Ruger
+    MiU 1310
+    Project 2
+    Gold App-->
+    
+<html lang="en">
+    <head>
+	    <meta charset="utf-8">
+	    
+	    <title>Pet Reminders</title>
+	    
+	    <!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	    <meta name="HandheldFriendly" content="True">
+	    <meta name="MobileOptimized" content="320"/>
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    
+	    <!-- Mobile IE needs ClearType for smoothing fonts -->
+	    <meta http-equiv="cleartype" content="on">
+	    
+	    <!-- StyleSheets under here -->
+	    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+	    <link href="css/styles.css" rel="stylesheet" />
+	    
+	    <!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	    <script src="js/libs/modernizr.custom.min.js"></script>
+    </head>
+    <body>
+	
+	<!-- HOME PAGE -->
+	<div data-role="page" id="home" data-theme="a">
+	    
+	    <div data-role="header" data-position="fixed">
+		<h1>Pet Reminders</h1>
+	    </div>
+	    
+	    <div data-role="content">
+		<a href="#additem"><img id="Ryder" src="img/Ryder.png" /></a>
+		<br></br>
+		<ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Search categories">
+		    <li data-role="list-divider">Browse</li>
+		    <li><a href="#petsName">Pet's Name</a></li>
+		    <li><a href="#typeOfPet">Type of Pet</a></li>
+		    <li><a href="#medication">Medication</a></li>
+		    <li><a href="#importance">Importance</a></li>
+		    <li><a href="#date">Date</a></li>
+		</ul>
+	    </div>
+	    
+	    <div data-role="footer" data-position="fixed" data-id="footer">
+		<div data-role="navbar">
+		    <ul>
+			<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+			<li><a href="#about" data-icon="info">About</a></li>
+			<li><a href="#additem" data-icon="plus">Add Item</a></li>
+		    </ul>
+		</div>
+	    </div>
+	    
+	</div>
+		
+	    <!--ABOUT PAGE-->  
+	<div data-role="page" id="about" data-add-back-btn="true" data-theme="a">
+	    <div data-role="header" data-position="fixed">
+		<h1>About</h1>
+	    </div>
+	    <div data-role="content">
+	    
+		<div data-role="collapsible" data-collapsed="true">
+		    <h3>About The Developer</h3>
+		    <p>
+			My name is Brandon Ruger, and I am attending Full Sail University's Mobile Development program.
+			I created this app for busy people like me who love their pets, this way we do not forget to give them their medication when it's due!
+			The photo of the dog on the home page is my Rat Terrier, Ryder!
+		    </p>
+		</div>
+		
+		<div data-role="collapsible" data-collapsed="true">
+		    <h3>Photo Credits</h3>
+		    <p>1. Cat - <a href="http://www.flickr.com/photos/41754875@N00/4811125985/">http://www.flickr.com/photos/41754875@N00/4811125985/</a></p>
+		    <p>2. Dog - <a href="http://www.flickr.com/photos/31062563@N05/4179374976/">http://www.flickr.com/photos/31062563@N05/4179374976/</a></p>
+		    <p>3. Bird - <a href="http://www.flickr.com/photos/8070463@N03/3458419919/">http://www.flickr.com/photos/8070463@N03/3458419919/</a></p>
+		    <p>4. Horse - <a href="http://www.flickr.com/photos/36755903@N00/382632838/">http://www.flickr.com/photos/36755903@N00/382632838/</a></p>
+		</div>
+
+		<p><a href="https://github.com/r02548/miu_project2.git" data-role="button" data-icon="arrow-r" data-iconpos="right">Git</a></p>
+		<p><a href="http://r02548.github.io/miu_project2/GOLDAPP/index.html" data-role="button" data-icon="arrow-r" data-iconpos="right">Gold App</a></p>
+		<p><a href="http://r02548.github.io/miu_project2/BRONZEAPP/index.html" data-role="button" data-icon="arrow-r" data-iconpos="right">Bronze App</a></p>
+		<p><a href="#home" data-role="button" data-icon="arrow-r" data-iconpos="right">Home</a></p>
+	    </div>
+	    <div data-role="footer" data-position="fixed" data-id="footer">
+		<div data-role="navbar">
+		    <ul>
+			<li><a href="#home" data-icon="home">Home</a></li>
+			<li><a href="#about" data-icon="info" class="ui-btn-active">About</a></li>
+			<li><a href="#additem" data-icon="plus">Add Item</a></li>
+		    </ul>
+		</div>
+	    </div>
+	</div>
+	    
+	    <!--PETS NAME PAGE-->
+	<div data-role="page" id="petsName" data-add-back-btn="true" data-theme="a">
+	    <div data-role="header" data-position="fixed">
+	    <h1>Browse by Pet's Name</h1>
+	    </div>
+		
+	    <div data-role="content">
+		<p>This page has not been set up yet.</p>
+		    
+	    </div>
+		
+	    <div data-role="footer" data-position="fixed" data-id="footer">
+		<div data-role="navbar">
+		    <ul>
+			<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+			<li><a href="#about" data-icon="info">About</a></li>
+			<li><a href="#additem" data-icon="plus">Add Item</a></li>
+		    </ul>
+		</div>
+		    
+	    </div>
+	</div>
+    
+	<!--TYPE OF PET PAGE-->
+	<div data-role="page" id="typeOfPet" data-add-back-btn="true">
+	    <div data-role="header" data-position="fixed">
+		<h1>Type of Pet</h1>
+	    </div>
+		
+	    <div data-role="content">
+		<div class="ui-grid-a">
+		    <div class="ui-block-a">
+			<a href="#cat">
+		        <img src="img/cat.png" id="cat"><p>Cat Reminders</p>
+			</a>
+		    </div>
+		    <div class="ui-block-b">
+			<a href="#dog">
+			<img src="img/dog.png" id="dog"><p>Dog Reminders</p>
+			</a>
+		    </div>
+		</div>
+		<div class="ui-grid-a">
+		    <div class="ui-block-a">
+			<a href="#bird">
+			<img src="img/bird.png" id="bird"><p>Bird Reminders</p>
+			</a>
+		    </div>
+		    <div class="ui-block-b">
+			<a href="#horse">
+			<img src="img/horse.png" id="horse"><p>Horse Reminders</p>
+			</a>
+		    </div>
+		</div>
+	    </div>
+		
+	    <div data-role="footer" data-position="fixed" data-id="footer">
+		<div data-role="navbar">
+		    <ul>
+			<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+			<li><a href="#about" data-icon="info">About</a></li>
+			<li><a href="#additem" data-icon="plus">Add Item</a></li>
+		    </ul>
+		</div>
+	    </div>
+	</div>
+	
+	<!--MEDICATION PAGE-->
+	<div data-role="page" id="medication" data-add-back-btn="true" data-theme="a">
+	    <div data-role="header" data-position="fixed">
+	    <h1>Browse by Medication</h1>
+	    </div>
+		
+	    <div data-role="content">
+		<p>This page has not been set up yet.</p>
+		    
+	    </div>
+		
+	    <div data-role="footer" data-position="fixed" data-id="footer">
+		<div data-role="navbar">
+		    <ul>
+			<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+			<li><a href="#about" data-icon="info">About</a></li>
+			<li><a href="#additem" data-icon="plus">Add Item</a></li>
+		    </ul>
+		</div>
+		    
+	    </div>
+	</div>
+	
+	<!--IMPORTANCE PAGE-->
+	<div data-role="page" id="importance" data-add-back-btn="true" data-theme="a">
+	    <div data-role="header" data-position="fixed">
+	    <h1>Browse by Level of Importance</h1>
+	    </div>
+		
+	    <div data-role="content">
+		<p>This page has not been set up yet.</p>
+		    
+	    </div>
+		
+	    <div data-role="footer" data-position="fixed" data-id="footer">
+		<div data-role="navbar">
+		    <ul>
+			<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+			<li><a href="#about" data-icon="info">About</a></li>
+			<li><a href="#additem" data-icon="plus">Add Item</a></li>
+		    </ul>
+		</div>
+		    
+	    </div>
+	</div>
+    
+	<!--DATE-->
+	<div data-role="page" id="date" data-add-back-btn="true" data-theme="a">
+	    <div data-role="header" data-position="fixed">
+		<h1>Browse by Reminder Date</h1>
+	    </div>
+		
+	    <div data-role="content">
+		<ul data-role="listview">
+		    <li>
+			<img src="img/Oral.png" />
+			<h3>Reminder 1</h3>
+			<p>Due date: 10/11/2013</p>
+			<p>Pet Name: Ryder</p>
+			<p>Pet Age: 2</p>
+			<p>Pet Type: Dog</p>
+			<p>Flea: Yes</p>
+			<p>Flea Rx: Oral</p>
+			<p>Heartworm: No</p>
+			<p>Other: No</p>
+			<p>Range: 3</p>
+			<p>Note:</p>
+		    </li>
+		    <li>
+			<img src="img/Sprayon.png" />
+			<h3>Reminder 2</h3>
+			<p>Due date: 10/17/2013</p>
+			<p>Pet Name: Axle</p>
+			<p>Pet Age: 1</p>
+			<p>Pet Type: Dog</p>
+			<p>Flea: Yes</p>
+			<p>Flea Rx: Spray-on</p>
+			<p>Heartworm: No</p>
+			<p>Other: No</p>
+			<p>Range: 3</p>
+			<p>Note:</p>
+		    </li>
+		    <li>
+			<img src="img/Topical.png" />
+			<h3>Reminder 3</h3>
+			<p>Due date: 11/1/2013</p>
+			<p>Pet Name: Parker</p>
+			<p>Pet Age: 6</p>
+			<p>Pet Type: Cat</p>
+			<p>Flea: Yes</p>
+			<p>Flea Rx: Topical</p>
+			<p>Heartworm: No</p>
+			<p>Other: No</p>
+			<p>Range: 4</p>
+			<p>Note:</p>
+		    </li>
+		    <li>
+			<img src="img/Topical.png" />
+			<h3>Reminder 4</h3>
+			<p>Due date: 12/7/2013</p>
+			<p>Pet Name: Roxy</p>
+			<p>Pet Age: 3</p>
+			<p>Pet Type: Dog</p>
+			<p>Flea: Yes</p>
+			<p>Flea Rx: Topical</p>
+			<p>Heartworm: Yes</p>
+			<p>Other: No</p>
+			<p>Range: 4</p>
+			<p>Note:</p>
+		    </li>
+		    <li>
+			<img src="img/Oral.png" />
+			<h3>Reminder 5</h3>
+			<p>Due date: 12/19/2013</p>
+			<p>Pet Name: Abbey</p>
+			<p>Pet Age: 11</p>
+			<p>Pet Type: Dog</p>
+			<p>Flea: Yes</p>
+			<p>Flea Rx: Oral</p>
+			<p>Heartworm: Yes</p>
+			<p>Other: No</p>
+			<p>Range: 4</p>
+			<p>Note:</p>
+		    </li>
+		</ul>
+		    
+	    </div>
+		    		
+	    <div data-role="footer" data-position="fixed" data-id="footer">
+		<div data-role="navbar">
+		    <ul>
+			<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+			<li><a href="#about" data-icon="info">About</a></li>
+			<li><a href="#additem" data-icon="plus">Add Item</a></li>
+		    </ul>
+		</div>
+		    
+	    </div>
+	</div>
+	
+	<!--ADD ITEM PAGE-->
+	<div data-role="page" id="additem" data-add-back-btn="true" data-theme="a">
+	    <div data-role="header" data-position="fixed">
+		<h1>Add A Reminder</h1>
+	    </div>
+	    <div data-role="content">
+		<form action="#" method="post" id="addReminderForm">
+                <fieldset>
+                    <legend>Pet Information</legend>
+                    <ul id="errors"></ul>
+                    <ul>
+                        <li><label for="petname">Pet's Name:</label><input type="text" id="petname" /></li>
+                        <li><label for="petage">Pet's Age:</label><input type="text" id="petage" /></li>
+                        <li><label for="pettype">Type of Pet:</label><input type="text" id="pettype" /></li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Medication Reminder</legend>
+                    <ul>
+                        <li><input type="checkbox" value="Flea Medication" id="flea" name="medication" /><label for="flea">Flea Medication</label>
+                        <label id="select" for="fleaRx">Select Type:</label><br />
+                        <li><input type="checkbox" value="Heartworm Medication" id="heartworm" name="medication" /><label for="heartworm">Heartworm Medication</label></li>
+                        <li><input type="checkbox" value="Other Meds" id="other" name="medication" /><label for="other">Other Meds</label><input type="text" id="other" /></li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>When To Be Reminded</legend>
+                    <ul>
+                        <li><label for="date">Date:</label><input type="date" id="date" name="date" required aria-required="true" /></li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Level Of Importance</legend>
+                    <label for="importance">On a scale of 1 to 5, how important is this reminder?</label><input type="range" id="range" min="1" max="5" name="importance" type="range" />
+                </fieldset>
+                <fieldset>
+                    <legend>Note For Reminder</legend>
+                    <label for="note">Type a note here:</label><textarea id="note"></textarea>
+                </fieldset>
+                <input type="button" id="button" value="Create Reminder!" />
+                <input type="hidden" value="Reminder Reference #" />
+            </form>
+            <nav>
+                <ul>
+                    <li><a href="#" id="clearData">Clear Stored Data</a></li>
+                    <li><a href="#" id="displayData">Display Data</a></li>
+                    <a href="additem.html" id="addNewReminder" style="display: none;">Add New Reminder</a>
+                </ul>
+            </nav>
+	    </div>
+	    <div data-role="footer" data-position="fixed" data-id="footer">
+		<div data-role="navbar">
+		    <ul>
+			<li><a href="#home" data-icon="home">Home</a></li>
+			<li><a href="#about" data-icon="info">About</a></li>
+			<li><a href="#additem" data-icon="plus" class="ui-btn-active">Add Item</a></li>
+		    </ul>
+		</div>
+	    </div>
+	</div>
+	
+	<!--CAT PAGE-->
+	<div data-role="page" id="cat" data-add-back-btn="true">
+	    <div data-role="header" data-position="fixed">
+	    <h1>Cat Reminders</h1>
+	    </div>
+		
+	    <div data-role="content">
+		<p>This page has not been set up yet.</p>
+		    
+	    </div>
+		
+	    <div data-role="footer" data-position="fixed" data-id="footer">
+		<div data-role="navbar">
+		    <ul>
+			<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+			<li><a href="#about" data-icon="info">About</a></li>
+			<li><a href="#additem" data-icon="plus">Add Item</a></li>
+		    </ul>
+		</div>
+		    
+	    </div>
+	</div>
+	
+	<!--DOG PAGE-->
+	<div data-role="page" id="dog" data-add-back-btn="true">
+	    <div data-role="header" data-position="fixed">
+	    <h1>Dog Reminders</h1>
+	    </div>
+		
+	    <div data-role="content">
+		<p>This page has not been set up yet.</p>
+		    
+	    </div>
+		
+	    <div data-role="footer" data-position="fixed" data-id="footer">
+		<div data-role="navbar">
+		    <ul>
+			<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+			<li><a href="#about" data-icon="info">About</a></li>
+			<li><a href="#additem" data-icon="plus">Add Item</a></li>
+		    </ul>
+		</div>
+		    
+	    </div>
+	</div>
+	
+	<!--BIRD PAGE-->
+	<div data-role="page" id="bird" data-add-back-btn="true">
+	    <div data-role="header" data-position="fixed">
+	    <h1>Bird Reminders</h1>
+	    </div>
+		
+	    <div data-role="content">
+		<p>This page has not been set up yet.</p>
+		    
+	    </div>
+		
+	    <div data-role="footer" data-position="fixed" data-id="footer">
+		<div data-role="navbar">
+		    <ul>
+			<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+			<li><a href="#about" data-icon="info">About</a></li>
+			<li><a href="#additem" data-icon="plus">Add Item</a></li>
+		    </ul>
+		</div>
+		    
+	    </div>
+	</div>
+	
+	<!--HORSE PAGE-->
+	<div data-role="page" id="horse" data-add-back-btn="true">
+	    <div data-role="header" data-position="fixed">
+	    <h1>Horse Reminders</h1>
+	    </div>
+		
+	    <div data-role="content">
+		<p>This page has not been set up yet.</p>
+		    
+	    </div>
+		
+	    <div data-role="footer" data-position="fixed" data-id="footer">
+		<div data-role="navbar">
+		    <ul>
+			<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+			<li><a href="#about" data-icon="info">About</a></li>
+			<li><a href="#additem" data-icon="plus">Add Item</a></li>
+		    </ul>
+		</div>
+		    
+	    </div>
+	</div>
+	
+	    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	    <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+	    <script type="text/javascript" src="js/main.js"></script>
+	    <script type="text/javascript" src="js/json.js"</script>
+    </body>
+</html>
