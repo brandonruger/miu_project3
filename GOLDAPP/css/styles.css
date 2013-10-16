@@ -29,3 +29,9 @@ a:hover{color: white; outline: groove;}
     max-width: 80%;
     max-height: 80%;
 }
+
+label.error{
+    display: block;
+    margin: 10px 0;
+    color: red;
+}
