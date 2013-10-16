@@ -328,7 +328,7 @@
 		    
 		    <div data-role="fieldcontain">
 			<label for="type">Type of Pet:</label>
-			<select name="type" id="type">
+			<select name="type" id="type" class="required">
 			    <option data-placeholder="true">Select type of pet.</option>
 			    <option value="dog">Dog</option>
 			    <option value="cat">Cat</option>
@@ -369,9 +369,25 @@
 		    <input type="reset" value="clearForm" data-theme="a"/>
 		    </div>
 		    
+		    <a href="#errorMessages" id="errorMsgs" data-rel="dialog">Open Errors</a>
 		</form>
 		
 	    </div>
+	</div>
+	
+	<!--ERROR POPUP DIALOGUE-->    
+	<div data-role="dialog" id="errorMessages">
+	    <div data-role="header" data-position="fixed">
+	    <h1>Missing Fields</h1>
+	    </div>
+		
+	    <div data-role="content">
+		<ul>
+		    <li>Test</li>
+		</ul>
+		    
+	    </div>
+	</div>
 	
 	
 	<!--CAT PAGE-->
