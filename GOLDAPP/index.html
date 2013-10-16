@@ -318,12 +318,12 @@
 		    
 		    <div data-role="fieldcontain">
 			<label for="name">Pet's Name:</label>
-			<input type="text" name="name" id="name" class="required"/>
+			<input type="text" name="name" id="name" class="required" placeholder="Enter your pet's name" />
 		    </div>
 		    
 		    <div data-role="fieldcontain">
 			<label for="age">Pet's Age:</label>
-			<input type="text" name="age" id="age" class="number"/>
+			<input type="text" name="age" id="age" class="number" placeholder="Enter your pet's age"/>
 		    </div>
 		    
 		    <div data-role="fieldcontain">
@@ -351,7 +351,7 @@
 		    
 		    <div data-role="fieldcontain">
 			<label for="reminderDate">Reminder Date:</label>
-			<input type="text" name="reminderDate" id="reminderDate" class="required date" />
+			<input type="date" name="reminderDate" id="reminderDate" class="required date"/>
 		    </div>
 		    		    
 		    <div data-role="fieldcontain">
@@ -369,13 +369,13 @@
 		    <input type="reset" value="clearForm" data-theme="a"/>
 		    </div>
 		    
-		    <a href="#errorMessages" id="errorMsgs" data-rel="dialog">Open Errors</a>
+		    <a href="#errorMessages" id="errorMsgs" data-rel="dialog" data-transition="pop">Open Errors</a>
 		</form>
 		
 	    </div>
 	</div>
 	
-	<!--ERROR POPUP DIALOGUE-->    
+	<!--ERROR POPUP DIALOG-->    
 	<div data-role="dialog" id="errorMessages">
 	    <div data-role="header" data-position="fixed">
 	    <h1>Missing Fields</h1>

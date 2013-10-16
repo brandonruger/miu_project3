@@ -35,3 +35,7 @@ label.error{
     margin: 10px 0;
     color: red;
 }
+
+#errorMsgs{
+    display: none;
+}
