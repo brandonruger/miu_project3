@@ -57,7 +57,7 @@ function getSelectedCheckedBoxes() {
         };
     }
 
-var storeData = function(data){
+var storeData = function(key){
     
     if (!key) {
         var generateId = Math.floor(Math.random()*100000001);
@@ -84,7 +84,11 @@ var storeData = function(data){
             localStorage.setItem(generateId, JSON.stringify(itemList));
             alert("Reminder has been added!");
     };
-	
+    
+var createButton = function(){
+	var getButton = $('submitButton');
+        getButton.addEventListener("click", storeData);
+};
 
 var deleteItem = function (){
 			
@@ -98,6 +102,6 @@ var clearLocal = function(){
 var fleaValue;
 var heartwormValue;
 var otherValue;
-var createButton = $('submitButton');
-createButton.addEventListener("click", storeData);
+/*var createButton = $('submitButton');
+createButton.addEventListener("click", storeData);*/
 
