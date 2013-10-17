@@ -27,18 +27,18 @@ $('#additem').on('pageinit', function(){
 	
 	//any other code needed for addItem page goes here
         function getSelectedCheckedBoxes() {
-        if ($('#medication1').checked) {
-            fleaValue = $('#medication1').val();
+        if ($('#medication1').prop("checked")) {
+            fleaValue = $('#medication1:checkbox:checked').val();
         } else {
             fleaValue = "No"
         };
-        if ($('#medication2').checked){
-            heartwormValue = $('#medication2').val();
+        if ($('#medication2').prop("checked")){
+            heartwormValue = $('#medication2:checkbox:checked').val();
         } else {
             heartwormValue = "No"
         };
-        if ($('#medication3').checked) {
-            otherValue = $('#medication3').val();
+        if ($('#medication3').prop("checked")) {
+            otherValue = $('#medication3:checkbox:checked').val();
         } else{
             otherValue = "No"
         };
