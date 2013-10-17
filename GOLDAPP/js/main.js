@@ -26,32 +26,19 @@ $('#additem').on('pageinit', function(){
 	});
 	
 	//any other code needed for addItem page goes here
-	
-});
-
-//The functions below can go inside or outside the pageinit function for the page in which it is needed.
-
-var autofillData = function (){
-	 
-};
-
-var getData = function(){
-
-};
-
-function getSelectedCheckedBoxes() {
-        if ($('medication1').checked) {
-            fleaValue = $('medication1').value;
+        function getSelectedCheckedBoxes() {
+        if ($('#medication1').checked) {
+            fleaValue = $('#medication1').val();
         } else {
             fleaValue = "No"
         };
-        if ($('medication2').checked){
-            heartwormValue = $('medication2').value;
+        if ($('#medication2').checked){
+            heartwormValue = $('#medication2').val();
         } else {
             heartwormValue = "No"
         };
-        if ($('medication3').checked) {
-            otherValue = $('medication3').value;
+        if ($('#medication3').checked) {
+            otherValue = $('#medication3').val();
         } else{
             otherValue = "No"
         };
@@ -70,23 +57,24 @@ var storeData = function(key){
         //Object properties contain array with the form label and input value.
         getSelectedCheckedBoxes(); 
         var itemList                = {};
-            itemList.name           = ["Pet Name:", $('name').value];
-            itemList.age            = ["Pet Age:", $('age').value];
-            itemList.type           = ["Pet Type:", $('type').value];
+            itemList.name           = ["Pet Name:", $("#name").val()];
+            itemList.age            = ["Pet Age:", $('#age').val()];
+            itemList.type           = ["Pet Type:", $('#type').val()];
             itemList.medication1    = ["Flea:", fleaValue];
             itemList.medication2    = ["Heartworm:", heartwormValue];
             itemList.medication3    = ["Other:", otherValue];
-            itemList.reminderDate   = ["Date:", $('reminderDate').value];
-            itemList.scale          = ["Range:", $('scale').value];
-            itemList.notes          = ["Note:", $('notes').value];
+            itemList.reminderDate   = ["Date:", $('#reminderDate').val()];
+            itemList.scale          = ["Range:", $('#scale').val()];
+            itemList.notes          = ["Note:", $('#notes').val()];
             
             //Save data into Local Storage
             localStorage.setItem(generateId, JSON.stringify(itemList));
             alert("Reminder has been added!");
     };
+});
     
 var createButton = function(){
-	var getButton = $('submitButton');
+	var getButton = $('#submitButton');
         getButton.addEventListener("click", storeData);
 };
 
@@ -97,6 +85,20 @@ var deleteItem = function (){
 var clearLocal = function(){
 
 };
+	
+
+
+//The functions below can go inside or outside the pageinit function for the page in which it is needed.
+
+var autofillData = function (){
+	 
+};
+
+var getData = function(){
+
+};
+
+
 
 //Variable Defaults
 var fleaValue;
