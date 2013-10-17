@@ -49,5 +49,9 @@ label.error{
 .inputHint{
     margin: 0px;
     padding: 0px;
-    font: 8pt Helvetica;
+    font: 10pt Helvetica;
+}
+
+#cancelLink{
+    margin-left: 80%;
 }

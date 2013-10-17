@@ -259,15 +259,18 @@
                     <legend>Pet Information</legend>
                     <ul id="errors"></ul>
                     <ul>
-                        <li><label for="petname">Pet's Name: (Required)</label><input type="text" id="petname" /></li>
-                        <li><label for="petage">Pet's Age:</label><input type="text" id="petage" /></li>
-                        <li><label for="pettype">Type of Pet: (Required)</label><input type="text" id="pettype" /></li>
+                        <li><label for="petname">Pet's Name: (Required)</label><input type="text" id="petname" placeholder="Type pet's name" /></li>
+			<p class="inputHint">Example: Ryder</p>
+                        <li><label for="petage">Pet's Age:</label><input type="text" id="petage" placeholder="Type pet's age" /></li>
+			<p class="inputHint">Example: 2</p>
+                        <li><label for="pettype">Type of Pet: (Required)</label><input type="text" id="pettype" value="dog"/></li>
+			<p class="inputHint">Example: dog, cat, horse, bird</p>
                     </ul>
                 </fieldset>
                 <fieldset>
                     <legend>Medication Reminder (Required)</legend>
                     <ul>
-                        <li><input type="checkbox" value="Flea Medication" id="flea" name="medication" /><label for="flea">Flea Medication</label>
+                        <li><input type="checkbox" value="Flea Medication" id="flea" name="medication" checked="" /><label for="flea">Flea Medication</label>
                         <label id="select" for="fleaRx">Select Type:</label><br />
                         <li><input type="checkbox" value="Heartworm Medication" id="heartworm" name="medication" /><label for="heartworm">Heartworm Medication</label></li>
                         <li><input type="checkbox" value="Other Meds" id="other" name="medication" /><label for="other">Other Meds</label><input type="text" id="other" /></li>
@@ -276,16 +279,17 @@
                 <fieldset>
                     <legend>Reminder Date (Required)</legend>
                     <ul>
-                        <li><label for="date">Date:</label><input type="date" id="date" name="date" required aria-required="true" /></li>
+                        <li><label for="date">Date:</label><input type="date" id="date" name="date" required aria-required="true" value="11/17/2013" /></li>
+			<p class="inputHint">Example: mm/dd/yyyy</p>
                     </ul>
                 </fieldset>
                 <fieldset>
                     <legend>Level Of Importance</legend>
-                    <label for="importance">On a scale of 1 to 5, how important is this reminder?</label><input type="range" id="range" min="1" max="5" name="importance" type="range" />
+                    <label for="importance">On a scale of 1 to 5, how important is this reminder?</label><input type="range" id="range" min="1" max="5" value="3" name="importance" type="range" />
                 </fieldset>
                 <fieldset>
                     <legend>Note For Reminder</legend>
-                    <label for="note">Type a note here:</label><textarea id="note"></textarea>
+                    <textarea id="note" placeholder="Type a note here"></textarea>
                 </fieldset>
                 <input type="button" id="button" value="Create Reminder!" />
                 <input type="hidden" value="Reminder Reference #" />
