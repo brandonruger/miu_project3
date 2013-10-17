@@ -57,7 +57,7 @@ var storeData = function(key){
         //Object properties contain array with the form label and input value.
         getSelectedCheckedBoxes(); 
         var itemList                = {};
-            itemList.name           = ["Pet Name:", $("#name").val()];
+            itemList.name           = ["Pet Name:", $('#name').val()];
             itemList.age            = ["Pet Age:", $('#age').val()];
             itemList.type           = ["Pet Type:", $('#type').val()];
             itemList.medication1    = ["Flea:", fleaValue];
