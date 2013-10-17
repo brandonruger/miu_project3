@@ -34,8 +34,21 @@ label.error{
     display: block;
     margin: 10px 0;
     color: red;
+    border: 2px solid red;
 }
 
 #errorMsgs{
     display: none;
+}
+
+#clearButton{
+    max-width: 25%;
+    max-height: 25%;
+    margin: 10px 10px;
+}
+
+.inputHint{
+    margin: 0px;
+    padding: 0px;
+    font: 8pt Helvetica;
 }
