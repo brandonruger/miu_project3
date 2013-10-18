@@ -1,3 +1,8 @@
+/*Brandon Ruger
+ *MiU 1310
+ *Project 3 */
+
+
 $('#home').on('pageinit', function(){
 	//code needed for home page goes here
         var addForm = $('#addItemForm');

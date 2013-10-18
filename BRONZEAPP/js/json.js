@@ -1,5 +1,5 @@
 /* Brandon Ruger
- * Project 1
+ * Project 3
  * MiU 1310 */
 
 var json = {
