@@ -258,10 +258,11 @@
                 <fieldset>
                     <legend>Pet Information</legend>
                     <ul id="errors"></ul>
+		    <input type="button" id="button" value="Create Reminder!" />
                     <ul>
-                        <li><label for="petname">Pet's Name: (Required)</label><input type="text" id="petname" placeholder="Type pet's name" /></li>
+                        <li><label for="petname">Pet's Name: (Required)</label><input type="text" id="petname" value="Ryder" /></li>
 			<p class="inputHint">Example: Ryder</p>
-                        <li><label for="petage">Pet's Age:</label><input type="text" id="petage" placeholder="Type pet's age" /></li>
+                        <li><label for="petage">Pet's Age:</label><input type="text" id="petage" value="2" /></li>
 			<p class="inputHint">Example: 2</p>
                         <li><label for="pettype">Type of Pet: (Required)</label><input type="text" id="pettype" value="dog"/></li>
 			<p class="inputHint">Example: dog, cat, horse, bird</p>
@@ -270,10 +271,10 @@
                 <fieldset>
                     <legend>Medication Reminder (Required)</legend>
                     <ul>
-                        <li><input type="checkbox" value="Flea Medication" id="flea" name="medication" checked="" /><label for="flea">Flea Medication</label>
+                        <li><input type="checkbox" value="Flea Medication" id="flea" name="medication"/><label for="flea">Flea Medication</label>
                         <label id="select" for="fleaRx">Select Type:</label><br />
-                        <li><input type="checkbox" value="Heartworm Medication" id="heartworm" name="medication" /><label for="heartworm">Heartworm Medication</label></li>
-                        <li><input type="checkbox" value="Other Meds" id="other" name="medication" /><label for="other">Other Meds</label><input type="text" id="other" /></li>
+                        <li><input type="checkbox" value="Heartworm Medication" id="heartworm" name="medication" checked=""/><label for="heartworm">Heartworm Medication</label></li>
+                        <li><input type="checkbox" value="Other Meds" id="other" name="medication" checked=""/><label for="other">Other Meds</label><input type="text" id="other" /></li>
                     </ul>
                 </fieldset>
                 <fieldset>
@@ -291,7 +292,6 @@
                     <legend>Note For Reminder</legend>
                     <textarea id="note" placeholder="Type a note here"></textarea>
                 </fieldset>
-                <input type="button" id="button" value="Create Reminder!" />
                 <input type="hidden" value="Reminder Reference #" />
             </form>
             <nav>
