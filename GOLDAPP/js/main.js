@@ -10,14 +10,14 @@ $('#additem').on('pageinit', function(){
 		    myForm.validate({
 			invalidHandler: function(form, validator) {
                             errorMsgs.click();
-                            var html = '';
+                            var newHtml = '';
                             for (var key in validator.submitted) {
                                 var label = $('label[for^="' + key + '"]').not('[generated]');
                                 var legend = label.closest('fieldset').find('.ui-controlgroup-label');
-                                var fieldName = legend.length ? legend.text(): label.text();
-                                html +='<li>' + fieldName +'</li>';
+                                var fieldName = legend.length ? legend.text() : label.text();
+                                newHtml +='<li>' + fieldName +'</li>';
                             };
-                            $("#errorMessages ul").html(html)
+                            $("#errorMessages ul").html(newHtml)
 			},
 			submitHandler: function() {
 		var data = myForm.serializeArray();
@@ -73,7 +73,7 @@ var storeData = function(key){
     };
 });
     
-var createButton = function(){
+var clickSubmit = function(){
 	var getButton = $('#submitButton');
         getButton.addEventListener("click", storeData);
 };
